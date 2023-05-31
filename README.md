@@ -31,6 +31,13 @@ Note: hitting the question mark key toggles the help panel.
 Enjoy!
 
 
+https://iq01.com/x/mapper.php
+
+This is a random map generator written entirely in JavaScript.
+It uses a "random walk" algorithm to generate maps for role-playing games.
+Right now there is no save feature so if you see a map you like, take a screenshot!
+
+
 http://iq01.com/javascript_superset.html
 
 I developed the JavaScript Superset several years ago to extend JavaScript's functionality.
