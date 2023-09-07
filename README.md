@@ -2,7 +2,15 @@
 These files are some samples of my work.
 I have also worked on several more sites and applications but can't share those because they are owned by others (even though I did the development).
 
-You can also see some of my website work at these URLs...
+You can also see some of my website work at the URLs below.
+
+If you view the source code of each project, you can see how my JavaScript coding has evolved over the years.
+The oldest project is the JavaScript Superset which I wrote in 2009.
+If you view the source code for that project, you will see a very old style of JavaScript.
+But the great thing about JavaScript is that it all still works!
+I try to stay current and use the latest JavaScript practices. 
+
+Enjoy! :) 
 
 ---
 
