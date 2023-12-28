@@ -48,7 +48,9 @@ https://iq01.com/x/mapper.php
 
 This is a random map generator written entirely in JavaScript.
 It uses a "random walk" algorithm to generate maps for role-playing games.
-Right now there is no save feature so if you see a map you like, take a screenshot!
+The "Random Seed" field allows you to repeat a map if desired.
+Use an empty field to generate a random map, or use a specific string or numeric value to repeat a map.
+Using the same value will always redraw a map so you can "save" any desired map!
 
 ---
 
