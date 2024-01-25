@@ -42,6 +42,10 @@ I developed every aspect of this project, including the user interface and scrip
 Note: hitting the question mark key toggles the help panel.
 Enjoy!
 
+(Note: for best results, Chakra should be run on a machine with hardware graphics acceleration.
+Otherwise it can run pretty slowly.
+Even with hardware acceleration it can still run slowly depending on the complexity of the chakra.)
+
 ---
 
 https://iq01.com/x/mapper.php
