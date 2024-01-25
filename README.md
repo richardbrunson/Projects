@@ -24,6 +24,10 @@ Now every time they want to make a change, they only have to update the database
 I also added an extensive search engine.
 And I also designed the site and color scheme!
 
+Note: this site is currently offline because of ownership issues. 
+(I don't own the domain and am currently attempting to work with the owners to get it back online.
+Once it is up again, I will update this ReadMe.)
+
 ---
 
 http://iq01.com
