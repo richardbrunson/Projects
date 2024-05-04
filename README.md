@@ -15,7 +15,7 @@ Enjoy! :)
 
 ---
 
-http://myhipcondition.com
+### http://myhipcondition.com
 
 This is a Tragically Hip fan-site.
 Originally, all of the pages were hard-coded and was a maintenance nightmare.
@@ -24,13 +24,13 @@ Now every time they want to make a change, they only have to update the database
 I also added an extensive search engine.
 And I also designed the site and color scheme!
 
-Note: this site is currently offline because of ownership issues. 
+*Note: this site is currently offline because of ownership issues. 
 (I don't own the domain and am currently attempting to work with the owners to get it back online.
-Once it is up again, I will update this ReadMe.)
+Once it is up again, I will update this ReadMe.)*
 
 ---
 
-http://iq01.com
+### http://iq01.com
 
 This is my personal website that I use both for business and personal projects.
 At the bottom of the page, you can select from over 30 color themes which are "remembered" after leaving the page (assuming you have cookies enabled).
@@ -38,7 +38,7 @@ I have attached some of the scripts in this Projects directory.
 
 ---
 
-http://iq01.com/x/chakra
+### http://iq01.com/x/chakra
 
 This is a favorite project of mine.
 It randomly draws spinning Chakras and is a good meditation aid.
@@ -52,7 +52,7 @@ Even with hardware acceleration it can still run slowly depending on the complex
 
 ---
 
-https://iq01.com/x/mapper.php
+### https://iq01.com/x/mapper.php
 
 This is a random map generator written entirely in JavaScript.
 It uses a "random walk" algorithm to generate maps for role-playing games.
@@ -62,7 +62,7 @@ Using the same value will always redraw a map so you can "save" any desired map!
 
 ---
 
-http://iq01.com/javascript_superset.html
+### http://iq01.com/javascript_superset.html
 
 I developed the JavaScript Superset several years ago to extend JavaScript's functionality.
 Fortunately, ES6 has many of these features now included.
@@ -70,8 +70,22 @@ I haven't edited the Superset in years and don't plan to -- it is just a showcas
 
 ---
 
-And here are a couple more samples...
+## And here are a couple more samples...
 
-http://iq01.com/drunkbots.html
+### http://iq01.com/drunkbots.html
 
-http://iq01.com/portfolio_ui.php
+### http://iq01.com/portfolio_ui.php
+
+---
+
+## Helper Min-Apps...
+
+### http://iq01.com/helpers/digital-sum.html
+
+This mini-app computes the "digital sum" of any numeric string.
+(Non-numeric characters are ignored.)
+
+### http://iq01.com/helpers/text-formatter.html
+
+This mini-app formats text based on user settings.
+If there are any additional [requested features](mailto:helper-request@iq01.com), email me and I will consider adding them!
