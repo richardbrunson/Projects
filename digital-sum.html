@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Digital Sum</title>
+        <style>
+            * {
+                font-family: sans-serif;
+                font-size: 14pt;
+            }
+            div {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .f,
+            .b {
+                color: #fff;
+                font-weight: bold;
+                padding: 5px;
+                width: 33px;
+            }
+            .f {
+                background-color: #090;
+            }
+            .b {
+                background-color: #f00;
+            }
+        </style>
+    </head>
+
+    <body>
+        Enter a number, address or anything containing numeric digits...<br />
+        [any non-numeric characters will be ignored]
+        <br /><br />
+        <input id="digits" type="text" maxlength="222" />
+        <button id="calc">Go!</button>
+        <button id="clear">Clear</button>
+
+        <hr />
+
+        <div id="result"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            const magics = [
+                11, 22, 33, 44, 55, 66, 77, 88, 99, 111, 222, 333, 444, 555,
+                666, 777, 888, 999,
+            ];
+
+            const isMagic = (number) => {
+                let isM = false;
+                number = number.trim() + "";
+                magics.forEach((magic) => {
+                    if (magic + "" == number) {
+                        isM ||= true;
+                    }
+                });
+                return isM;
+            };
+
+            const calculate = (digits) => {
+                const string = (digits + "").split("");
+                let result = 0;
+                string.forEach((digit) => {
+                    const d = parseInt(digit, 10);
+                    result += !isNaN(d) ? d : 0;
+                });
+                result += "";
+                $("#result").append(
+                    `<div${
+                        result.length === 1
+                            ? ' class="f"'
+                            : isMagic(result)
+                            ? ' class="b"'
+                            : ""
+                    }>${result}</div>`
+                );
+                if (result.length > 1) {
+                    calculate(result);
+                }
+            };
+
+            $(document).ready(() => {
+                $("#calc").click(() => {
+                    $("#result").html("");
+                    calculate($("#digits").val().trim());
+                });
+                $("#clear").click(() => {
+                    $("#result").html("");
+                    $("#digits").val("");
+                });
+            });
+        </script>
+    </body>
+</html>

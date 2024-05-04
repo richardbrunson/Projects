@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Text Formatter</title>
+        <style>
+            * {
+                font-family: sans-serif;
+                font-size: 12pt;
+            }
+            .top {
+                float: left;
+                width: 555px;
+            }
+            .clr {
+                clear: both;
+            }
+            textarea {
+                font-family: monospace;
+            }
+        </style>
+    </head>
+
+    <body>
+        Enter text to be formatted...
+        <br />
+
+        <div class="top">
+            <textarea id="text" name="text" cols="55" rows="10"></textarea>
+        </div>
+        <div class="top">
+            <input id="format-commas" type="checkbox" checked="1" />Replace
+            commas with linebreaks<br />
+            <input id="format-quotes" type="checkbox" checked="1" />Convert
+            curly quotes to ticks<br />
+            <input id="format-colons" type="checkbox" checked="1" />Pad
+            colons<br />
+            <input id="format-tabs" type="checkbox" checked="1" />Replace tabs
+            with spaces<br />
+            <input id="format-bullets" type="checkbox" checked="1" />Replace
+            bullets with:
+            <select id="bullets-prefix" name="bullets-prefix">
+                <option value="" selected="1"></option>
+                <option value="[">[</option>
+            </select>
+            <select id="bullets-replace" name="bullets-replace">
+                <option value="•" selected="1">•</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="id">ID</option>
+            </select>
+            <select id="bullets-suffix" name="bullets-suffix">
+                <option value="" selected="1"></option>
+                <option value="]">]</option>
+                <option value=".">.</option>
+            </select>
+            <br />
+            <input id="format-spaces" type="checkbox" checked="1" />Remove
+            double spaces<br />
+            <input id="format-trim" type="checkbox" checked="1" />Trim lines<br />
+
+            <br />
+
+            <button id="format">&nbsp;Format Text&nbsp;</button>
+            <button id="clear">&nbsp;Clear&nbsp;</button>
+        </div>
+
+        <div class="clr">&nbsp;</div>
+        <hr />
+        <div class="clr">&nbsp;</div>
+
+        Formatted text...
+        <br />
+        <textarea id="result" name="result" cols="55" rows="25"></textarea>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            let formatCommas = true,
+                lineBreak = "\n",
+                formatQuotes = true,
+                formatColons = true,
+                formatTabs = true,
+                formatBullets = true,
+                bullet = "•",
+                bulletType = bullet,
+                bulletUseIds = false,
+                bulletPrefix = "",
+                bulletIndex = 0,
+                bulletSuffix = "",
+                formatSpaces = true,
+                doubleSpace = "  ",
+                formatTrim = true;
+
+            const trimIt = (text) => {
+                let lines = text.split(lineBreak),
+                    newLines = [];
+                bulletIndex = 0;
+
+                lines.forEach((line) => {
+                    let l = line;
+                    l = formatCommas
+                        ? l.replaceAll(", ", ",").replaceAll(",", lineBreak)
+                        : l;
+                    l = formatQuotes
+                        ? l
+                              .replaceAll("‘", "'")
+                              .replaceAll("’", "'")
+                              .replaceAll("“", '"')
+                              .replaceAll("”", '"')
+                        : l;
+                    l = formatColons ? l.replaceAll(":", " : ") : l;
+                    l = formatTabs ? l.replaceAll("\t", "    ") : l;
+                    if (formatBullets && l.indexOf(bullet) > -1) {
+                        bulletIndex += bulletUseIds ? 1 : 0;
+                        l = l.replaceAll(
+                            bullet,
+                            bulletUseIds
+                                ? `${bulletPrefix}${bulletIndex}${bulletSuffix}`
+                                : `${bulletPrefix}${bulletType}${bulletSuffix}`
+                        );
+                    }
+                    while (formatSpaces && l.indexOf(doubleSpace) > -1) {
+                        l = l.replaceAll(doubleSpace, " ");
+                    }
+                    l = formatTrim ? l.trim() : l;
+                    newLines.push(l);
+                });
+
+                $("#result").val(`${newLines.join(lineBreak)}`);
+            };
+
+            const updateBullets = () => {
+                bulletPrefix = $("#bullets-prefix").find(":selected").val();
+                bulletType = $("#bullets-replace").find(":selected").val();
+                bulletUseIds = bulletType === "id";
+                bulletSuffix = $("#bullets-suffix").find(":selected").val();
+
+                console.warn(
+                    bulletPrefix,
+                    bulletType,
+                    bulletUseIds,
+                    bulletSuffix
+                );
+            };
+
+            $(document).ready(() => {
+                $("#format-commas").change(function () {
+                    formatCommas = $(this).prop("checked");
+                });
+                $("#format-quotes").change(function () {
+                    formatQuotes = $(this).prop("checked");
+                });
+                $("#format-colons").change(function () {
+                    formatColons = $(this).prop("checked");
+                });
+                $("#format-spaces").change(function () {
+                    formatSpaces = $(this).prop("checked");
+                });
+                $("#format-tabs").change(function () {
+                    formatTabs = $(this).prop("checked");
+                });
+                $("#format-bullets").change(function () {
+                    formatBullets = $(this).prop("checked");
+                });
+                $("#bullets-prefix").change(function () {
+                    updateBullets();
+                });
+                $("#bullets-replace").change(function () {
+                    updateBullets();
+                });
+                $("#bullets-suffix").change(function () {
+                    updateBullets();
+                });
+                $("#format-trim").change(function () {
+                    formatTrim = $(this).prop("checked");
+                });
+
+                $("#format").click(() => {
+                    $("#result").val("");
+                    trimIt($("#text").val().trim());
+                });
+                $("#clear").click(() => {
+                    $("#result").val("");
+                    $("#text").val("");
+                });
+            });
+        </script>
+    </body>
+</html>
