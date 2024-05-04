@@ -70,7 +70,7 @@ I haven't edited the Superset in years and don't plan to -- it is just a showcas
 
 ---
 
-# Helper Min-Apps
+# Helper Mini-Apps
 
 ### http://iq01.com/helpers/digital-sum.html
 
