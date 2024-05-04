@@ -84,7 +84,7 @@ If there are any additional [requested features](mailto:helper-request@iq01.com)
 
 ---
 
-# And here are a couple more samples...
+# And here are a couple more random samples...
 
 ### http://iq01.com/drunkbots.html
 
