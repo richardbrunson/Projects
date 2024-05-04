@@ -70,15 +70,7 @@ I haven't edited the Superset in years and don't plan to -- it is just a showcas
 
 ---
 
-## And here are a couple more samples...
-
-### http://iq01.com/drunkbots.html
-
-### http://iq01.com/portfolio_ui.php
-
----
-
-## Helper Min-Apps...
+# Helper Min-Apps
 
 ### http://iq01.com/helpers/digital-sum.html
 
@@ -89,3 +81,11 @@ This mini-app computes the "digital sum" of any numeric string.
 
 This mini-app formats text based on user settings.
 If there are any additional [requested features](mailto:helper-request@iq01.com), email me and I will consider adding them!
+
+---
+
+# And here are a couple more samples...
+
+### http://iq01.com/drunkbots.html
+
+### http://iq01.com/portfolio_ui.php
