@@ -82,6 +82,11 @@ This mini-app computes the "digital sum" of any numeric string.
 This mini-app formats text based on user settings.
 If there are any additional [requested features](mailto:helper-request@iq01.com), email me and I will consider adding them!
 
+### http://iq01.com/x/timer.html
+
+A simple timer I wrote for counting down the seconds before my shift ends at a boring job.
+Nothing fancy, just something to watch that's a little more interesting than watching the grass grow! :) 
+
 ---
 
 # And here are a couple more random samples...
