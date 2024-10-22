@@ -68,7 +68,6 @@ I haven't edited the Superset in years and don't plan to -- it is just a showcas
 ### http://iq01.com/helpers/digital-sum.html
 
 This mini-app computes the "digital sum" of any numeric string.
-(Non-numeric characters are ignored.)
 
 ### http://iq01.com/helpers/text-formatter.html
 
