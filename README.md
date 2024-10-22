@@ -82,7 +82,7 @@ Nothing fancy, just something to watch that's a little more interesting than wat
 
 ---
 
-# And here are a couple more random samples...
+# And here are some more random samples...
 
 ### http://iq01.com/drunkbots.html
 
