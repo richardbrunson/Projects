@@ -45,16 +45,6 @@ Even with hardware acceleration it can still run slowly depending on the complex
 
 ---
 
-### https://iq01.com/x/mapper.php
-
-This is a random map generator written entirely in JavaScript.
-It uses a "random walk" algorithm to generate maps for role-playing games.
-The "Random Seed" field allows you to repeat a map if desired.
-Use an empty field to generate a random map, or use a specific string or numeric value to repeat a map.
-Using the same value will always redraw a map so you can "save" any desired map!
-
----
-
 ### https://iq01.com/x/cre.php
 
 Cre is a roleplaying game quest generator.
@@ -64,6 +54,16 @@ It's basically working but needs refinement, which I will work on as I have time
 But it does work and is a good starting point for any roleplaying adventure!
 Suggestions for improvement are welcome and I will do my best to incorporate them if I think they are worthwile.
 (Cre is a work-in-progress and I will provide updates as I go.)
+
+---
+
+### https://iq01.com/x/mapper.php
+
+This is a random map generator written entirely in JavaScript.
+It uses a "random walk" algorithm to generate maps for role-playing games.
+The "Random Seed" field allows you to repeat a map if desired.
+Use an empty field to generate a random map, or use a specific string or numeric value to repeat a map.
+Using the same value will always redraw a map so you can "save" any desired map!
 
 ---
 
