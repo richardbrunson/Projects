@@ -60,6 +60,8 @@ Using the same value will always redraw a map so you can "save" any desired map!
 Cre is a roleplaying game quest generator.
 It was written entirely in TypeScript and generates random quests, along with random item and character names.
 (See the above links for the actual TypeScript version if interested.)
+It's basically working but needs refinement, which I will work on as I have time.
+But it does work and is a good starting point for any roleplaying adventure!
 Suggestions for improvement are welcome and I will do my best to incorporate them if I think they are worthwile.
 (Cre is a work-in-progress and I will provide updates as I go.)
 
