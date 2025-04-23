@@ -55,6 +55,16 @@ Using the same value will always redraw a map so you can "save" any desired map!
 
 ---
 
+### https://iq01.com/x/cre.php
+
+Cre is a roleplaying game quest generator.
+It was written entirely in TypeScript and generates random quests, along with random item and character names.
+(See the above links for the actual TypeScript version if interested.)
+Suggestions for improvement are welcome and I will do my best to incorporate them if I think they are worthwile.
+(Cre is a work-in-progress and I will provide updates as I go.)
+
+---
+
 ### http://iq01.com/javascript_superset.html
 
 I developed the JavaScript Superset several years ago to extend JavaScript's functionality.
