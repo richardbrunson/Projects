@@ -31,7 +31,7 @@ This tracker displays the current market gold and silver prices, along with vari
 
 ---
 
-### http://iq01.com/x/chakra
+### http://iq01.com/x/chakra.php
 
 This is a favorite project of mine.
 It randomly draws spinning Chakras and is a good meditation aid.
