@@ -33,15 +33,15 @@ This tracker displays the current market gold and silver prices, along with vari
 
 ### http://iq01.com/x/chakra.php
 
-This is a favorite project of mine.
-It randomly draws spinning Chakras and is a good meditation aid.
-I developed every aspect of this project, including the user interface and scripts.
-Note: hitting the question mark key toggles the help panel.
-Enjoy!
+This is a favorite project of mine. 
+It randomly draws spinning Chakras and is a good meditation aid. 
+I developed every aspect of this project, including the user interface and scripts. 
+Note: hitting the question mark key toggles the help panel. Enjoy!
 
-(Note: for best results, Chakra should be run on a machine with hardware graphics acceleration.
-Otherwise it can run pretty slowly.
-Even with hardware acceleration it can still run slowly depending on the complexity of the chakra.)
+Depending on which browser you use, Chakra may run quite rapidly. 
+Use the Up and Down arrow keys to adjust rendering speed.
+(Note: for best results, Chakra should be run on a machine with hardware graphics acceleration. 
+Otherwise it can run pretty slowly. Even with hardware acceleration it can still run slowly depending on the complexity of the chakra.)
 
 ---
 
