@@ -101,6 +101,11 @@ If there are any additional [requested features](mailto:helper-request@iq01.com)
 A simple timer I wrote for counting down the seconds before my shift ends at a boring job.
 Nothing fancy, just something to watch that's a little more interesting than watching the grass grow! :) 
 
+### http://iq01.com/x/time.html
+
+A simple calculator to compute the time between 2 dates. 
+Nothing fancy, just something for a quick helper method.
+
 ---
 
 # And here are some more random samples...
