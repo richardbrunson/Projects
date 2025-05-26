@@ -118,5 +118,3 @@ Don't ask! :)
 ### http://iq01.com/x/ret.html
 
 ### http://iq01.com/x/tv.html
-
-### http://iq01.com/darrylfish.php
