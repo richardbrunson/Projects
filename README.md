@@ -89,10 +89,10 @@ I haven't edited the Superset in years and don't plan to -- it is just a showcas
 
 ### https://iq01.com/x/rgb.html
 
-This mini-app generates contrasting colors for specified web colors. 
-Color Theory says every color has its contrasting color. However, web colors are different than normal ("paint") colors.
-For example, the normal contrasting color for red is green; however, for web colors, the contrasting color for red is actually cyan,
-and the contrasting color for green is magenta!
+This mini-app generates complementary colors for specified web colors. 
+Color Theory says every color has its complementary color. However, web colors are different than normal ("paint") colors.
+For example, the normal complementary color for red is green; however, for web colors the complementary color for red is actually cyan,
+and the complementary color for green is magenta!
 Use this tool for viewing contrasting web colors.
 
 ### http://iq01.com/helpers/digital-sum.html
